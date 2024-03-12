@@ -1,8 +1,15 @@
 {
-	"manifest+version":3,
-	"name": "NoteTest",
-	"description": "Testing the browser extension stuff.",
-	"version":"1.0",
-	
-	"permissions": ["storage"]
+  "manifest_version":3,
+  "name":"Notes",
+  "description": "Note Taking With Voice Recognition",
+  "version": "1.0",
+  "icons": {
+    "16": "notes.png",
+    "48": "notes.png",
+    "128": "notes.png"
+  },
+  "action": {
+    "default_popup": "notes.html",
+    "default_icon": "notes.png"
+  }
 }
