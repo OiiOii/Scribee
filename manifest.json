@@ -11,5 +11,7 @@
   "action": {
     "default_popup": "notes.html",
     "default_icon": "notes.png"
-  }
+  },
+  "permissions": ["storage"]
+
 }
