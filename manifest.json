@@ -1,8 +1,23 @@
 {
-	"manifest+version":3,
+	"manifest_version": 3,
 	"name": "NoteTest",
-	"description": "Testing the browser extension stuff.",
-	"version":"1.0",
-	
-	"permissions": ["storage"]
+	"description": "Note taking Extension",
+	"version": "1.1",
+	"permissions": ["storage"],
+
+	"icons": {
+		"16": "images/notes.png",
+		"48": "images/notes.png",
+		"128": "images/notes.png"
+	},
+
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": "images/notes.png"
+	},
+
+	"background": {
+		"service_worker": "js/background.js"
+	}
+
 }
