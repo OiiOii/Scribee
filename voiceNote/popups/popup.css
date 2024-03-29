@@ -1,0 +1,111 @@
+html{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.container{
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(208, 211, 211) rgb(251, 253, 253);
+    height: 280px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    border-radius: 10px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.buttons-section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-description{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/*input.textInput{
+    margin-top: 3px;
+    height: 200px;
+}*/
+
+
+.noteInputDiv{
+    width: 300px;
+    height: 250px;
+    padding-left: 35px;
+    padding-top: 10px;
+}
+
+
+.noteCard{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(248, 246, 246);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.noteCard:hover{
+    background-color: rgb(253, 250, 250);
+}
+
+.textInput{
+    margin-top: 3px;
+    height: 200px;
+}
+
+
+.editbtn{
+    cursor: pointer;
+}
+
+.deletebtn{
+    cursor: pointer;
+    border-radius: 100%;
+    padding: 5px;
+    border-width: 0px;
+    background-color: rgb(248, 246, 246);
+}
+
+.deletebtn:hover{
+    background-color: rgb(231, 233, 234);
+}
+
+.voicebtn{
+    cursor: pointer;
+    border-radius: 100%;
+    padding: 5px;
+    border-width: 0px;
+    background-color: rgb(248, 246, 246);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+.voicebtn:hover{
+    background-color: rgb(231, 233, 234);
+}
