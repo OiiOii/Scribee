@@ -1,2 +1,2 @@
-# VoiceNote
-Voice Activated Note Taking Chrome Extension
+# Scribee
+Voice-Activated Note Taking Chrome Extension
