@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "voiceNote",
+    "description": "Note taking extension with voice recognition",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popups/popup.html",
+      "default_icon": "imgs/hello_extensions.png"
+    },
+    "permissions": ["storage", "tabs", "activeTab"]
+  }
