@@ -1,2 +1,2 @@
 # Scribee
-Voice Activated Note Taking Chrome Extension
+Speech to Text Note Taking Chrome Extension
