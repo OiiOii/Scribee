@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Scribee",
+    "description": "Note taking extension with voice recognition",
+    "version": "1.4.1",
+    "action": {
+      "default_popup": "popups/popup.html",
+      "default_icon": "imgs/notes.png"
+    },
+    "permissions": [
+      "storage",
+      "activeTab",
+      "tabs"
+    ]
+    
+  }
