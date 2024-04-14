@@ -1,0 +1,28 @@
+Change logs:
+
+Version 1.4.1
+missing status msg for some of the buttons has been added for usability
+
+Version 1.4
+Save URL Feature Added, Edit Note button added on pinned notes
+
+Version 1.3.3
+Continuous feedback on voice recognition is working, status bar not working properly.
+
+Version 1.3.2
+Updated main app image (replaced Hi), Save, Record, Cancel button function is now displayed on the small status display bar when hovered over.
+
+Version 1.3.1
+Updated CSS and images
+
+Version 1.3
+Dark Mode, Pinned Notes Implemented
+
+Version 1.2
+Speech Recognition Implemented (continuous feedbback is not working)
+
+Version 1.1
+Note objects and save features implemented.
+
+Version 1.0
+Main Menu and Basic Note Taking Feature Implemented
