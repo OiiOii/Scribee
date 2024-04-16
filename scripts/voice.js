@@ -55,22 +55,8 @@ function voicetoText(textInputArea,desc){
                 }
             }
         }
-
     }
-
 }
-
-//Trying micpermission
-// function getLocalStream() {
-//     navigator.mediaDevices.getUserMedia({ audio: true })
-//     .then(function(stream) {
-//         console.log('Microphone access granted');
-//     })
-//     .catch(function(err) {
-//         console.error('Error accessing microphone:', err);
-//     });
-// }
-
 export{
     voicetoText
 }
