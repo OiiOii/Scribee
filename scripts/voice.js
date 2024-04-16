@@ -10,7 +10,7 @@ function voicetoText(textInputArea,desc){
 
         let recognizing = false;
 
-        //recognition.continuous = true;
+        recognition.continuous = true;
         recognition.interimResults = true;
 
         recognition.start();
