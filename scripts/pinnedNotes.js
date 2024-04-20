@@ -1,4 +1,5 @@
 import { clearContainer } from "./frontPage.js";
+import { voicetoText } from "./voice.js";
 
 function viewPinnedNotes(desc){
     chrome.storage.local.get({'notesDatabase':[]}, function(result){
@@ -120,7 +121,7 @@ function viewPinnedNotes(desc){
                         voicebtn.appendChild(micimg);
                      
                         voicebtn.addEventListener('click', (event)=>{
-                            voicetoText(textInput);
+                            voicetoText(textInput, desc);
                             event.preventDefault();
                      
                         });

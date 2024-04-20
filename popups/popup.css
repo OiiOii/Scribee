@@ -16,6 +16,7 @@ body{
     --txt-color: #212427;
     --bg-color: #ffffff;
     --bg-contain-color: #ffffff;
+    --bg-note-color: #faf9f9;
     --bg-note-hover-color:#ffffff; 
     --bg-btn-hover-color:#f6f0f0;
     --bg-btn-active-color: #242428;
@@ -92,7 +93,8 @@ form{
 .noteCard{
     display: grid;
     /* justify-content: space-around; */
-    grid-template-columns: 80px 140px 43px 43px 43px;
+    grid-template-columns: 80px 140px 35px 35px 35px;
+    column-gap: 10px;
     /* align-items: center; */
     margin-left: 10px;
     margin-right: 10px;

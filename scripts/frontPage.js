@@ -8,30 +8,64 @@ const container = document.querySelector('.container');
 const desc = document.querySelector('.button-description');
 
 //Buttons for adding notes and showing description when hovering
-const addNotebtn = document.querySelector('.add-note-btn').addEventListener('click', ()=>{
-    clearContainer();
-    showNoteInput();
-});
-const addNoteHoverEnter = document.querySelector('.add-note-btn').addEventListener('mouseenter', ()=>{desc.innerHTML = "Add Note";});
-const addNoteHoverLeave = document.querySelector('.add-note-btn').addEventListener('mouseleave', ()=>{desc.innerHTML = "-";});
+//Refactored to deal with Null cases
+const addNoteBtn = document.querySelector('.add-note-btn');
+if (addNoteBtn) {
+    addNoteBtn.addEventListener('click', () => {
+        clearContainer();
+        showNoteInput();
+    });
+    const addNoteHoverEnter = addNoteBtn.addEventListener('mouseenter', () => { desc.innerHTML = "Add Note"; });
+    const addNoteHoverLeave = addNoteBtn.addEventListener('mouseleave', () => { desc.innerHTML = "-"; });
+}
+
+// const addNotebtn = document.querySelector('.add-note-btn').addEventListener('click', ()=>{
+//     clearContainer();
+//     showNoteInput();
+// });
+// const addNoteHoverEnter = document.querySelector('.add-note-btn').addEventListener('mouseenter', ()=>{desc.innerHTML = "Add Note";});
+// const addNoteHoverLeave = document.querySelector('.add-note-btn').addEventListener('mouseleave', ()=>{desc.innerHTML = "-";});
 
 //Buttons for viewing notes and showing description when hovering
-const viewNotesbtn = document.querySelector('.view-notes-btn').addEventListener('click', ()=>{
-    clearContainer();
-    viewNotes(desc);
-});
-const viewNoteHoverEnter = document.querySelector('.view-notes-btn').addEventListener('mouseenter', ()=>{desc.innerHTML = "View Notes";});
-const viewNoteHoverLeave = document.querySelector('.view-notes-btn').addEventListener('mouseleave', ()=>{desc.innerHTML = "-";});
+//Refactored to deal with Null cases
+const viewNotesBtn = document.querySelector('.view-notes-btn');
+if (viewNotesBtn) {
+    viewNotesBtn.addEventListener('click', () => {
+        clearContainer();
+        viewNotes(desc);
+    });
+    const viewNoteHoverEnter = viewNotesBtn.addEventListener('mouseenter', ()=>{desc.innerHTML = "View Notes";});
+    const viewNoteHoverLeave = viewNotesBtn.addEventListener('mouseleave', ()=>{desc.innerHTML = "-";});
+}
+
+// const viewNotesbtn = document.querySelector('.view-notes-btn').addEventListener('click', ()=>{
+//     clearContainer();
+//     viewNotes(desc);
+// });
+// const viewNoteHoverEnter = document.querySelector('.view-notes-btn').addEventListener('mouseenter', ()=>{desc.innerHTML = "View Notes";});
+// const viewNoteHoverLeave = document.querySelector('.view-notes-btn').addEventListener('mouseleave', ()=>{desc.innerHTML = "-";});
 
 //Buttons for pinning notes and showing description when hovering
-const pinnedNotesbtn = document.querySelector('.pinned-notes-btn').addEventListener('click', ()=>{
-    clearContainer();
-    viewPinnedNotes(desc);
-});
-const pinNoteHoverEnter = document.querySelector('.pinned-notes-btn').addEventListener('mouseenter', ()=>{desc.innerHTML = "Pinned Notes";});
-const pinNoteHoverLeave = document.querySelector('.pinned-notes-btn').addEventListener('mouseleave', ()=>{desc.innerHTML = "-";});
+//Refactored to deal with Null cases
+const pinnedNotesBtn = document.querySelector('.pinned-notes-btn');
+if (pinnedNotesBtn) {
+    pinnedNotesBtn.addEventListener('click', () => {
+        clearContainer();
+        viewPinnedNotes(desc);
+    });
+    const pinNoteHoverEnter = pinnedNotesBtn.addEventListener('mouseenter', ()=>{desc.innerHTML = "Pinned Notes";});
+    const pinNoteHoverLeave = pinnedNotesBtn.addEventListener('mouseleave', ()=>{desc.innerHTML = "-";});
+}
+
+// const pinnedNotesbtn = document.querySelector('.pinned-notes-btn').addEventListener('click', ()=>{
+//     clearContainer();
+//     viewPinnedNotes(desc);
+// });
+// const pinNoteHoverEnter = document.querySelector('.pinned-notes-btn').addEventListener('mouseenter', ()=>{desc.innerHTML = "Pinned Notes";});
+// const pinNoteHoverLeave = document.querySelector('.pinned-notes-btn').addEventListener('mouseleave', ()=>{desc.innerHTML = "-";});
 
 //sets the current theme if available in storage
+
 const currentTheme = chrome.storage.local.get({'theme':''}, function(result){
     let theme = result.theme;
     if(typeof theme == 'undefined'){

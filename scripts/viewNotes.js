@@ -33,7 +33,7 @@ function viewNotes(desc){
                 const titleP = document.createElement('p');
                 titleP.setAttribute("class", "titleP");
                 if(notesDatabase[i].title.length > 11){
-                    titleP.innerHTML = notesDatabase[i].title.substring(0,11) + "...";
+                    titleP.innerHTML = notesDatabase[i].title.substring(0,8) + "...";
                 }
                 else{
                     titleP.innerHTML = notesDatabase[i].title;

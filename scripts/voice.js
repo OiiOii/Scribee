@@ -50,7 +50,7 @@ function voicetoText(textInputArea,desc){
             if (recognizing) {
                 for (let i = event.resultIndex; i < event.results.length; i++) {
                     if (event.results[i].isFinal) {
-                        textInputArea.value += event.results[i][0].transcript;
+                        textInputArea.value +=" " + event.results[i][0].transcript+".";
                     }
                 }
             }
