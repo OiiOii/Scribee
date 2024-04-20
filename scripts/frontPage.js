@@ -117,7 +117,6 @@ function showNoteInput(){
 
     const textInput = document.createElement('textarea');
     textInput.setAttribute("class", "textInput");
-    //textInput.setAttribute("type", "text");
     textInput.setAttribute("placeholder", "Write your note here...");
     form.appendChild(textInput);
 
