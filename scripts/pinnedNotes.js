@@ -2,6 +2,7 @@ import { clearContainer } from "./frontPage.js";
 import { voicetoText } from "./voice.js";
 
 function viewPinnedNotes(desc){
+    //storage for the database
     chrome.storage.local.get({'notesDatabase':[]}, function(result){
 
         let notesDatabase = result.notesDatabase;
@@ -19,7 +20,7 @@ function viewPinnedNotes(desc){
             container.appendChild(noNotesMessage);
 
         }else{
-            
+            //fill in the notes divs with data if available from database
             for(let i = 0; i < notesDatabase.length; i++){
                 if(notesDatabase[i].pinned == true){
                     const pinnoteCard = document.createElement('div');
