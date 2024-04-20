@@ -25,11 +25,11 @@ class note{
     }
 
     set setTitle(newTitle){
-        this.tite = newTitle;
+        this.title = newTitle;
     }
 
     set setText(newText){
-        this.text = text;
+        this.text = newText;
     }
 
     set setDate(newDate){
@@ -37,7 +37,7 @@ class note{
     }
 
     set setPinned(newPinned){
-        this.pinned = pinned;
+        this.pinned = newPinned;
     }
 
 }

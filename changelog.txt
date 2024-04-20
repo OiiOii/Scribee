@@ -1,4 +1,8 @@
 Change logs:
+
+Version 1.4.3
+fixed broken setters on note object.
+
 Version 1.4.2
 fixed some issues like the mic not working when editing from pinned notes, desc not showing up for mic sometimes, and some css display fixes
 
